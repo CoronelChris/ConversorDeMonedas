@@ -17,6 +17,7 @@ public class ConversorMonedasService {
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
+                .uri(pagina)
                 .build();
 
 

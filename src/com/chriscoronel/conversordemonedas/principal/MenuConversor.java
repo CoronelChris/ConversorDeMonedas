@@ -4,8 +4,6 @@ import com.chriscoronel.conversordemonedas.modelos.ConversorMonedasService;
 import com.chriscoronel.conversordemonedas.modelos.OperacionCambio;
 import com.chriscoronel.conversordemonedas.modelos.SeleccionMoneda;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class MenuConversor {
@@ -34,7 +32,6 @@ public class MenuConversor {
         while ( opcion != 7){
 
             System.out.println(menu);
-//            opcion = scanner.nextInt();
 
             if (scanner.hasNextInt()){
                 opcion =scanner.nextInt();
@@ -86,7 +83,7 @@ public class MenuConversor {
                 }
 
                 case 7 -> {
-                    System.out.println("Case 7");
+                    System.out.println("Gracias por usar el conversor. ¡Hasta luego! !");
                     return;
                 }
                 default -> {
@@ -97,7 +94,6 @@ public class MenuConversor {
             System.out.println("Que cantidad deseas cambiar?");
             try {
                 Double cantidad = Double.valueOf(scanner.nextLine());
-
 
                 SeleccionMoneda seleccion = conversor.buscaMoneda(monedaBase);
                 Double tasa = seleccion.conversion_rates().get(segundaMoneda);
