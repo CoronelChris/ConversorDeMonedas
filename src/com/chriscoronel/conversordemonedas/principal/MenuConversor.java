@@ -83,7 +83,7 @@ public class MenuConversor {
                 }
 
                 case 7 -> {
-                    System.out.println("Gracias por elegirnos, adios !");
+                    System.out.println("Gracias por usar el conversor. ¡Hasta luego!");
                     return;
                 }
                 default -> {
